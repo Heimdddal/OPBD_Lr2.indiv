@@ -1,0 +1,22 @@
+﻿<Application x:Class="OPBD_Lr2.indiv.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:OPBD_Lr2.indiv"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="ComboBox" x:Key="ComboBoxStyle">
+
+            <Setter Property="Background" Value="#3270D5"/>
+            <Setter Property="ItemContainerStyle">
+                <Setter.Value>
+                    <Style TargetType="ComboBoxItem">
+                        <Setter Property="Background" Value="#3270D5"/>
+                        <Setter Property="BorderBrush" Value="#3270D5"/>
+                        <Setter Property="Foreground" Value="White"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+
+        </Style>
+    </Application.Resources>
+</Application>
