@@ -224,6 +224,28 @@ namespace OPBD_Lr2.indiv
             }
         }
 
-        
+        private void Query1_Click(object sender, RoutedEventArgs e)
+        {
+            var db = new OpbdLr22Context();
+
+            var lim = Convert.ToInt16(SalaryLim.Text);
+
+            var salaryMoreThan = db.Positions.Where(pos => pos.Salary > lim).ToList();
+        }
+
+        private void Query2_Click(object sender, RoutedEventArgs e)
+        {
+            var db = new OpbdLr22Context();
+        }
+
+        private void Query3_Click(object sender, RoutedEventArgs e)
+        {
+            var db = new OpbdLr22Context();
+        }
+
+        private void Query4_Click(object sender, RoutedEventArgs e)
+        {
+            var db = new OpbdLr22Context();
+        }
     }
 }
